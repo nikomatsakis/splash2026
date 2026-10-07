@@ -19,15 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install LibreOffice
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends libreoffice-impress
       - name: Build site
         run: |
           mkdir -p site/rebase
-          soffice --headless --convert-to html --outdir site/rebase rebase.pptx
-          mv site/rebase/rebase.html site/rebase/index.html
+          cp rebase.pdf site/rebase/rebase.pdf
+          cp rebase/index.html site/rebase/index.html
           cp rebase.pptx site/rebase.pptx
           cp index.html site/index.html
           touch site/.nojekyll
