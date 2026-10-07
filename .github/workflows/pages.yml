@@ -23,12 +23,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends libreoffice-impress
-      - name: Convert iwaco.pptx to HTML
+      - name: Build site
         run: |
-          mkdir -p site
-          soffice --headless --convert-to html --outdir site iwaco.pptx
-          # Serve the main page as index.html
-          mv site/iwaco.html site/index.html
+          mkdir -p site/rebase
+          soffice --headless --convert-to html --outdir site/rebase rebase.pptx
+          mv site/rebase/rebase.html site/rebase/index.html
+          cp rebase.pptx site/rebase.pptx
+          cp index.html site/index.html
           touch site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
