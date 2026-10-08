@@ -5,7 +5,7 @@ A small static page listing Niko Matsakis's talks at SPLASH 2026.
 ## Talks
 
 - **REBASE** — [view the presentation](https://1drv.ms/p/c/fc6238e2c825ad8e/IQAicCGAOWyUSoas_zx8h6FwAX4K-qU23eeypjxQwXlNBF4?e=BkH84j)
-- **IWACO** — presentation pending
+- **IWACO** — [view the presentation](https://1drv.ms/p/c/fc6238e2c825ad8e/IQAyyfEu4SdnSaW2Qnlc82wCATs6-S3dGrni0DB3NjpNrkQ?e=rOLmkW)
 
 ## View the page
 
